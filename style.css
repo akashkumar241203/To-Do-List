@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e0f7fa;
+    font-family: sans-serif;
+    border: none;
+    outline: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+}
+
+main{
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    max-width: 800px;
+}
+
+.header{
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    border: 2px solid black;
+    padding: 6px;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+input{
+    font-size: large;
+    width: 100%;
+}
+
+form img{
+    width: 35px;
+    transition: transform 0.1s ease-in-out;
+}
+
+form img:hover{
+    transform: scale(1.07);
+}
+
+form img:active{
+    transform: scale(0.9);
+}
+
+img{
+    width: 40px;
+}
+
+.edit{
+    width: 24px;
+}
+
+.delete{
+    width: 25px;
+}
+
+input{
+    flex: 1;
+    padding: 8px;
+    border-radius: 1rem;
+}
+
+.task-container{
+    padding: 6px;
+    height: 650px;
+    overflow: auto;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow: auto;
+}
+
+.todo-items{
+    display: flex;
+    border: 3px solid green;
+    border-radius: 1rem;
+    padding: 8px;
+    gap: 8px;
+}
+
+.todo-items span{
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
